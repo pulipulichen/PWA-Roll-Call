@@ -1,0 +1,26 @@
+<div class="app-main ui form">
+  <div class="fields">
+    <div class="field">
+      <div class="ui massive input">
+        <input type="number" value="1234">
+      </div>
+    </div>
+    <div class="field">
+      <select v-model="example">
+        <option value="">(Select an example)</option>
+        <option v-for="option in examples"
+          :value="option.value">{{ option.key }}</option>
+      </select>
+
+      <input type="url" v-model="db.localConfig.cover" />
+    </div>
+    <div class="field">
+      <div class="ui button" @click="resizeWindow">
+        RESIZE
+      </div>
+    </div>
+  </div>
+  <div class="cover" v-if="(db.localConfig.cover !== '')">
+    <img :src="db.localConfig.cover" />
+  </div>
+</div>

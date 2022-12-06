@@ -1,6 +1,5 @@
 /* global Vue, httpVueLoader */
 
 var appComponents = {
-  'app-input': httpVueLoader('./components/app-input/app-input.vue'),
-  'app-output': httpVueLoader('./components/app-output/app-output.vue'),
+  'app-main': httpVueLoader('./components/app-main/app-main.vue')
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wrapped Text Formatter</title>
+    <title>Roll Call!</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -47,19 +47,11 @@
   <body>
 
     <div id="app">
-      <app-input 
-        ref="AppInput"
-        :db="db"></app-input>
-      <app-output
-        ref="AppOutput" 
-        :db="db"></app-output>
+      <app-main 
+        ref="AppMain"
+        :db="db"></app-main>
     </div>
     
-    <iframe id="transTempIframe" name="transTemp" src="transTemp.html" 
-      style="position: fixed; top: 100vh; left: 100vw; z-index: -1; opacity: 0"></iframe>
-    <textarea id="waitForTrans"
-      style="position: fixed; top: 100vh; left: 100vw; z-index: -1; opacity: 0"></textarea>
-
     <!-- ================================================ -->
     
     <script src="./config.js"></script>
